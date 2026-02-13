@@ -16,6 +16,7 @@ a {
 button {
     border: none;
     background-color: initial;
+
 }
 
 
@@ -41,6 +42,69 @@ nav {
 }
 
 
+svg {
+    fill: currentColor;
+}
+
+.header-info-item {
+    color: rgba(117, 117, 117, 1);
+}
+
+.header-info-items:hover {
+    color: #2196F3;
+    cursor: pointer;
+}
+
+.svg-style-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons-style {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #AFB1B8;
+}
+
+.social-icons-style:hover {
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+.svg-style-imporant-clients {
+    width: 106px;
+    height: 60px;
+}
+
+.svg-block-clients {
+    border: 1px solid #AFB1B8;
+    padding: 16px 32px;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+.svg-block-clients:hover {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+    cursor: pointer;
+}
+
+.footer-icons {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+}
+
+.footer-icons:hover {
+    background-color: #2196F3;
+}
+
+
 
 .header-info-links, .header-info-list {
     display: flex;
@@ -61,11 +125,6 @@ nav {
     font-family: "Raleway"
 }
 
-.header-info-item {
-    color: rgba(117, 117, 117, 1);
-    fill: rgba(117, 117, 117, 1);
-}
-
 .header-info-items {
     display: flex;
     align-items: center;
@@ -73,17 +132,19 @@ nav {
     gap: 10px;
 }
 
-.header-info-items:hover {
-    color: rgba(33, 150, 243, 1);
-    cursor: pointer;
-    fill: #2196F3;
-}
-
-
 .svg-style-header {
     width: 16px;
     height: 12px;
     align-items: center;
+}
+
+.header-info-items:hover svg {
+    fill: #2196F3;
+}
+
+.header-info-items svg {
+    fill: rgba(117, 117, 117, 1);
+    transition: fill 0.3s;
 }
 
 .header-info-item > svg {
@@ -435,29 +496,9 @@ nav {
     background-position: center;
 }
 
-.svg-style-icons{
-    fill: #AFB1B8;
-    width: 20px;
-    height: 20px;
-    box-sizing: content-box;
-
-}
-
-.social-icons-style {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 51px;
-    gap: 20px;
-}
-
-.social-icons-style:hover {
-    fill: white;
-    background-color: #2196F3;
+.svg-style-icons:hover {
+    fill: #2196F3;
     cursor: pointer;
-    
 }
 
 .social-icons-style:hover .icon-peoples{
@@ -488,24 +529,6 @@ nav {
     margin-top: 94px;
 }
 
-.svg-style-imporant-clients {
-    fill: rgba(175, 177, 184, 1);
-    width: 106px;
-    height: 60px;
-}
-
-.svg-block-clients {
-    border: 1px rgba(175, 177, 184, 1) solid;
-    padding: 16px 32px 16px 32px;
-    border-radius: 4px;
-
-}
-
-.svg-block-clients:hover {
-    border: 1px #2196F3 solid;    
-    cursor: pointer;
-}
-
 .svg-block-clients:hover .svg-style-imporant-clients {
    fill: rgba(33, 150, 243, 1);    
    cursor: pointer;
@@ -533,13 +556,6 @@ footer > .container {
     color: white;
     margin-bottom: 20px;
 }
-
-.footer-icons {
-    fill: white;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 51px;
-}
-
 
 .join-email {
     background-color: rgba(47, 48, 58, 1);
