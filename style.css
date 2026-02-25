@@ -21,6 +21,7 @@ button {
 
 
 ul , li , ol {
+    list-style: none;
     padding: 0px;
     margin: 0px;
 }
@@ -122,7 +123,8 @@ svg {
 }
 
 .name {
-    font-family: "Raleway"
+    font-family: "Raleway";
+    padding-bottom: 20px;
 }
 
 .header-info-items {
@@ -167,6 +169,14 @@ svg {
     flex-wrap: wrap;
 }
 
+.footer-icons-wraper {
+    display: flex; 
+}
+
+.footer-form {
+    padding-left: 100px;
+}
+
 .footer-info > .container {
     display: flex;
 }
@@ -195,7 +205,6 @@ svg {
    display: flex;
    flex-direction: column;
 }
-
 
 
 .business-section {
@@ -555,6 +564,18 @@ footer > .container {
     text-transform: uppercase;
     color: white;
     margin-bottom: 20px;
+}
+
+.footer-join-icons {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+    width: 200px;
 }
 
 .join-email {
