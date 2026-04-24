@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -42,7 +42,7 @@
         <section class="welcome-section">
             <div class="container">
                 <h1 class="welcome-section-title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button type="button" class="welcome-section-btn">Замовити послугу</button>
+                <button type="button" class="welcome-section-btn" data-open-modal>Замовити послугу</button>
             </div>
         </section>
         <section class="description-section">
@@ -248,43 +248,43 @@
                 <ul class="clients-section-list">
                     <li class="clients-list-item">
                         <a class="clients-list-link" href="">
-                            <svg class="clients-list-svg" style="width: 41px; height: 46px;">
-                                <use href="./img/symbol-defs.svg#icon-client-1">
+                            <svg class="clients-list-svg">
+                                <use href="./img/defs2.svg#icon-Logo">
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a class="clients-list-link" href="">
-                            <svg class="clients-list-svg" style="width: 40px; height: 51px;">
-                                <use href="./img/symbol-defs.svg#icon-client-2">
+                            <svg class="clients-list-svg">
+                                <use href="./img/defs2.svg#icon-Logo-1">
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a class="clients-list-link" href="">
-                            <svg class="clients-list-svg" style="width: 41px; height: 43px;">
-                                <use href="./img/symbol-defs.svg#icon-client-3">
+                            <svg class="clients-list-svg">
+                                <use href="./img/defs2.svg#icon-Logo-2">
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a class="clients-list-link" href="">
-                            <svg class="clients-list-svg" style="width: 84px; height: 40px;">
-                                <use href="./img/symbol-defs.svg#icon-client-4">
+                            <svg class="clients-list-svg">
+                                <use href="./img/defs2.svg#icon-Logo-3">
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a class="clients-list-link" href="">
-                            <svg class="clients-list-svg" style="width: 62px; height: 45px;">
-                                <use href="./img/symbol-defs.svg#icon-client-5">
+                            <svg class="clients-list-svg">
+                                <use href="./img/defs2.svg#icon-Logo-4">
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a class="clients-list-link" href="">
-                            <svg class="clients-list-svg" style="width: 93px; height: 43px;">
-                                <use href="./img/symbol-defs.svg#icon-client-6">
+                            <svg class="clients-list-svg">
+                                <use href="./img/defs2.svg#icon-Logo-5">
                             </svg>
                         </a>
                     </li>
@@ -295,91 +295,99 @@
     <footer class="footer">
         <div class="container footer-style">
             <div>
-            <a href="index.html" class="logo">Web<span class="footer-logo-spart">Studio</span></a>
-            <ul class="footer-list">
-                <li class="footer-list-sitem">м. Київ, пр-т Лесі Українки, 26</li>
-                <li class="footer-list-item">info@devstudio.com</li>
-                <li class="footer-list-item">+38 096 111 11 11</li>
-            </ul>
+                <a href="index.html" class="logo">Web<span class="footer-logo-spart">Studio</span></a>
+                <ul class="footer-list">
+                    <li class="footer-list-sitem"><a class="footer-list-sitem" href="">м. Київ, пр-т Лесі Українки,
+                            26</a></li>
+                    <li class="footer-list-item"><a class="footer-list-item" href="">info@devstudio.com</a></li>
+                    <li class="footer-list-item"><a class="footer-list-item" href="">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-join">приєднуйтесь</p>
+                <ul class="team-list-item-icons">
+                    <li class="team-list-item-icon-style footer-icon-bg">
+                        <a class="footer-list-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="team-list-item-icon">
+                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-list-item-icon-style footer-icon-bg">
+                        <a class="footer-list-link" href="https://x.com/home?lang=uk" target="_blank">
+                            <svg class="team-list-item-icon">
+                                <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-list-item-icon-style footer-icon-bg">
+                        <a class="footer-list-link" href="https://www.facebook.com/?locale=uk_UA" target="_blank">
+                            <svg class="team-list-item-icon">
+                                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-list-item-icon-style footer-icon-bg">
+                        <a class="footer-list-link" href="https://ua.linkedin.com/" target="_blank">
+                            <svg class="team-list-item-icon">
+                                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-subscribe">Підпишіться на розсилку</p>
+                <div class="footer-sublink">
+                    <input type="email" placeholder="E-mail" class="footer-email">
+                    <button class="footer-button modal-open">Підписатися
+                        <svg class="footer-button-svg">
+                            <use href="./img/tg.svg"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-            <div>
-            <p class="footer-join">приєднуйтесь</p>
-            <ul class="team-list-item-icons">
-                <li class="team-list-item-icon-style footer-icon-bg">
-                    <a class="footer-list-link" href="https://www.instagram.com/" target="_blank">
-                        <svg class="team-list-item-icon">
-                            <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="team-list-item-icon-style footer-icon-bg">
-                    <a class="footer-list-link" href="https://x.com/home?lang=uk" target="_blank">
-                        <svg class="team-list-item-icon">
-                            <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="team-list-item-icon-style footer-icon-bg">
-                    <a class="footer-list-link" href="https://www.facebook.com/?locale=uk_UA" target="_blank">
-                        <svg class="team-list-item-icon">
-                            <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="team-list-item-icon-style footer-icon-bg">
-                    <a class="footer-list-link" href="https://ua.linkedin.com/" target="_blank">
-                        <svg class="team-list-item-icon">
-                            <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            </div>
-            <div>
-             <p class="footer-subscribe">Підпишіться на розсилку</p>
-             <input type="email" placeholder="E-mail" class="footer-email">
-             <button class="footer-button modal-open" data-open-modal>Підписатися
-                <svg class="footer-button-svg">
-                    <use href="./img/tg.svg"></use>
-                </svg>
-             </button>
-            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
-            <button class="modal-close" data-close-modal>❌</button>
-            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <form class="footer-form" action="">
-                <fieldset>
-                <div class="form-wrap">
-                    <svg class="form-svg">
-                        <use href="./img/Vector.svg"></use>
-                    </svg>
-                    <label class="form-text" for="nameput">Ім'я</label>
-                    <input class="form-input"  type="text" name="" id="nameput"></input>
+            <div class="btn-icon-close-modal" data-close-modal>
+                <svg class="svg-style-icon-modal">
+                    <use href="./img/defs2.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </div>
+            <p class="title-modal">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="form-modal">
+                <label class="modal-subtitle">Ім'я</label>
+                <div class="modal-input">
+                    <div class="block-icons"><svg class="icons-modal">
+                            <use class="smth1" href="./img/defs2.svg#icon-person-black-18dp-1"></use>
+                        </svg></div>
+                    <input type="text" class="input-modal" required>
                 </div>
-                <div class="form-wrap">
-                    <svg class="form-svg">
-                        <use href="./img/Vector (1).svg"></use>
-                    </svg>
-                    <label class="form-text" for="tel">Телефон</label>
-                    <input class="form-input" type="text" name="" id="tel">
+                <label class="modal-subtitle">Телефон</label>
+                <div class="modal-input">
+                    <div class="block-icons"><svg class="icons-modal">
+                            <use class="smth1" href="./img/defs2.svg#icon-phone-black-18dp-1"></use>
+                        </svg></div>
+                    <input type="tel" class="input-modal" required>
                 </div>
-                <div class="form-wrap">
-                    <svg class="form-svg">
-                        <use href="./img/Vector (2).svg"></use>
-                    </svg>
-                    <label class="form-text" for="text">Коментар</label>
-                    <input class="form-input-comment" type="text" name="" id="text" placeholder="Введіть текст">
+                <label class="modal-subtitle">Пошта</label>
+                <div class="modal-input">
+                    <div class="block-icons"><svg class="icons-modal">
+                            <use class="smth1" href="./img/defs2.svg#icon-email-black-18dp-1"></use>
+                        </svg></div>
+                    <input type="email" class="input-modal" required>
                 </div>
-                <div class="form-wrap-desc">
-                    <input class="form-checkbox" type="checkbox" name="" id="checkbox">
-                    <label class="form-check-text" for="">Погоджуюся з розсилкою та приймаю <a class="form-link" href=""> Умови договору</a></label>
-                </div>
-             </fieldset>
-                <button class="send-button">Відправити</button>
+                <label class="modal-subtitle">Коментар</label>
+                <textarea class="textarea-modal" placeholder="Введіть текст"></textarea>
+                <label class="modal-conditions"><input class="modal-checkbox" type="checkbox" required>
+                    Погоджуюся з розсилкою та приймаю <a href="#" class="conditions-modal">Умови договору</a>
+                </label>
+                <button type="submit" class="button-submit-modal">Відправити</button>
             </form>
+
         </div>
     </div>
     <script src="modal.js"></script>
