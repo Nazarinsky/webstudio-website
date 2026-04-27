@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --main-font: "Roboto";
+  --main-color: #2196F3;
+}
+
 .container {
     width: 1170px;
     margin: auto;
+}
+
+body {
+    font-family: var(--main-font);
+    user-select: none;
 }
 
 .header-styles {
@@ -19,7 +29,7 @@
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
-    color: #2196f3;
+    color: var(--main-color);
 }
 
 .logo-spart {
@@ -34,7 +44,6 @@
 }
 
 .header-list-item {
-    font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -48,7 +57,7 @@
     display: inline-block;
     width: 100%;
     height: 4px;
-    background-color: #2196F3;
+    background-color: var(--main-color);
     transform: scaleX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
@@ -68,7 +77,6 @@
 }
 
 .adress-item {
-    font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -76,7 +84,7 @@
 }
 
 .adress-item:hover {
-    color: #2196F3;
+    color: var(--main-color);
 
 }
 
@@ -92,13 +100,9 @@
     padding-bottom: 180px;
     padding-top: 180px;
     text-align: center;
-    display: flex;
-    fill: #2F303A;
-    fill-opacity: 40%;
 }
 
 .welcome-section-title {
-    font-family: "Roboto";
     font-weight: 900;
     font-size: 44px;
     line-height: 136%;
@@ -111,11 +115,9 @@
 
 .welcome-section-btn {
     border-radius: 4px;
-    width: 216px;
-    height: 50px;
+    padding: 10px 32px;
     border: none;
-    background-color: #2196F3;
-    font-family: "Roboto";
+    background-color: var(--main-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 188%;
@@ -128,19 +130,101 @@
 } 
 
 .welcome-section-btn:hover {
-    opacity: 80%;    
+    opacity: 80%;   
+}
+
+.description-section {
+    padding-top: 164px;
+    padding-bottom: 94px;
 }
 
 .description-list {
     display: flex;
     justify-content: space-around;
-    padding-top: 94px;
-    padding-bottom: 94px;
     flex-wrap: wrap;
 }
 
+.desription-img1 {
+    position: relative;
+}
+
+.desription-img1::before {
+    content: "";
+    display: block;
+    background-image: url("./img/antenna\ 1.svg");
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f4fa;
+}
+
+.desription-img2 {
+    position: relative;
+}
+
+.desription-img2::before {
+    content: "";
+    display: block;
+    background-image: url("./img/clock\ 1.svg");
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f4fa;
+}
+
+.desription-img3 {
+    position: relative;
+}
+
+.desription-img3::before {
+    content: "";
+    display: block;
+    background-image: url("./img/diagram\ 1.svg");
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f4fa;
+}
+
+.desription-img4 {
+    position: relative;
+}
+
+.desription-img4::before {
+    content: "";
+    display: block;
+    background-image: url("./img/astronaut\ 1.svg");
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f4fa;
+}
+
 .description-list-item-title {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -151,7 +235,6 @@
 }
 
 .description-list-item-text {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -165,7 +248,6 @@
 }
 
 .work-section-title {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -199,7 +281,6 @@
     background: rgba(47, 48, 58, 0.8);
     width: 100%;
     text-align: center;
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
@@ -209,18 +290,19 @@
     color: white
 }
 
+
 .team-section {
     background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-section-title {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
@@ -228,7 +310,6 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding-bottom: 94px;
 }
 
 .team-list-item {
@@ -243,7 +324,6 @@
 }
 
 .team-list-item-name {
-    font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -254,7 +334,6 @@
 }
 
 .team-list-item-job {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -280,6 +359,7 @@
 
 .team-list-link {
     color: #AFB1B8;
+
 }
 
 .team-list-item-icon-style:hover > .team-list-link {
@@ -287,7 +367,7 @@
 }
 
 .team-list-item-icon-style:hover {
-    background-color: #2196f3;
+    background-color: var(--main-color);
 }
 
 .team-list-item-icon {
@@ -299,16 +379,53 @@
     background-color: white;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+} 
+
+
+.team-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    text-decoration: none;
+}
+
+.team-list-item-icon-style {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    transition: 0.3s;
+}
+
+.team-list-link:hover .team-list-item-icon-style {
+    background-color: var(--main-color);
+}
+
+.team-list-link:hover .team-list-item-icon {
+    fill: white;
+}
+
+.team-list-item-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .clients-section-title {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
-    padding-top: 94px;
 }
  
 .clients-section-list {
@@ -317,7 +434,6 @@
     align-items: center;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 
 .clients-list-link {
@@ -339,19 +455,21 @@
 }
 
 .clients-list-link:hover {
-    border-color: #2196F3;    
+    border-color: var(--main-color);    
     animation: jello;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
 .clients-list-link:hover > .clients-list-svg {
-    fill: #2196F3;
+    fill: var(--main-color);
 }
 
 .footer {
     background-color: #2F303A;
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo-spart {
@@ -359,13 +477,12 @@
 }
 
 .footer-list-sitem {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .footer-list-link {
@@ -373,7 +490,6 @@
 }
 
 .footer-list-item {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -383,7 +499,6 @@
 }
 
 .footer-join {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -393,7 +508,6 @@
 }
 
 .footer-subscribe {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -403,7 +517,6 @@
 }
 
 .footer-email {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
@@ -416,14 +529,16 @@
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
+    padding-right: 12px;
+}
+
+.footer-email:focus {
+    outline: none;
 }
 
 .footer-button {
-    background-color: #2196F3;
+    background-color: var(--main-color);
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
     line-height: 188%;
@@ -434,6 +549,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding: 10px 28px;
 }
 
 .footer-sublink {
@@ -448,8 +564,6 @@
 .footer-style {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 .footer-icon-bg {
@@ -507,7 +621,6 @@
 }
 
 .title-modal {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
@@ -524,7 +637,6 @@
 }
 
 .modal-subtitle {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
@@ -536,7 +648,6 @@
     padding-bottom: 12px;
     padding-top: 12px;
     padding-right: 16px;
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
@@ -553,8 +664,25 @@
     fill: rgba(33, 150, 243, 1);
 }
 
+.modal-input:hover {
+    outline: 1px solid rgba(33, 150, 243, 1);
+    fill: rgba(33, 150, 243, 1);
+}
+
 .textarea-modal:focus {
     outline: 1px solid rgba(33, 150, 243, 1);    
+}
+
+.textarea-modal:hover {
+    outline: 1px solid rgba(33, 150, 243, 1);    
+}
+
+.modal-input:focus-within .icons-modal {
+    fill: var(--main-color);
+}
+
+.modal-input:hover .icons-modal {
+    fill: var(--main-color);
 }
 
 .textarea-modal {
@@ -566,7 +694,6 @@
     outline: solid 1px rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px 12px 16px;
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
@@ -574,7 +701,6 @@
 }
 
 .modal-conditions {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -587,7 +713,6 @@
 }
 
 .conditions-modal {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -607,15 +732,14 @@
     margin-right: 7px;
 }
 
-.modal-checkbox:active {
-    fill: #2196F3;
+input[type="checkbox"] {
+  accent-color: var(--main-color);
 }
 
 .button-submit-modal {
     display: flex;
-    width: 200px;
-    height: 50px;
-    background-color: #2196F3;
+    padding: 10px 52px;
+    background-color: var(--main-color);
     color: #FFFFFF;
     border-radius: 4px;
     align-self: center;
@@ -626,7 +750,6 @@
     justify-self: center;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
     line-height: 188%;
@@ -674,19 +797,24 @@ input {
 /* Portfolio css */
 
 .header-portfolio {
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .portfolio-btns {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .portfolio-btn {
-    font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
     line-height: 163%;
@@ -703,7 +831,7 @@ input {
 .portfolio-btn:hover {
     color: #fff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
-    background-color: #2196f3;    
+    background-color: var(--main-color);    
     animation: swing;
     animation-duration: 1s;
 }
@@ -715,22 +843,25 @@ input {
     justify-content: space-between;
     row-gap: 30px;
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .img-portfolio {
     width: 370px;
     height: 294px;
+    display: block;
 }
 
 .figure-portfolio {
     position: relative;
     overflow: hidden;
+   
 }
 
 .overlay-portfolio {
     justify-items: center;
     align-content: center;
-    width: 100%;
+    width: 370px;
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     color: rgba(255, 255, 255, 1);
@@ -746,13 +877,11 @@ input {
 }
 
 .overlay-portfolio-text {
-    font-family: "Roboto";
     padding: 15px;
     line-height: 28px
 }
 
 .product-item-name {
-    font-family: "Roboto";
     color: rgba(33, 33, 33, 1);
     font-weight: 700;
     font-size: 18px;
@@ -762,7 +891,6 @@ input {
 }
 
 .product-item-subtitle {
-    font-family: "Roboto";
     color: rgba(117, 117, 117, 1);
     font-weight: 400;
     font-size: 16px;
@@ -777,6 +905,7 @@ input {
     border-left: solid 1px rgba(238, 238, 238, 1);
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 370px;
 }
 
 .products-item:hover {
@@ -786,4 +915,5 @@ input {
 
 .products-item {
    transition: 0.15s;
+   width: 370px;
 }

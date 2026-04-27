@@ -30,6 +30,7 @@ table {
 a{
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 address {
@@ -38,4 +39,8 @@ address {
 
 button {
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
