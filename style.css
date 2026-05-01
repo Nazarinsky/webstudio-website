@@ -43,6 +43,15 @@ body {
     padding-right: 294px;
 }
 
+.header-list-item-active {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    cursor: pointer;
+    position: relative;
+}
+
 .header-list-item {
     font-weight: 500;
     font-size: 14px;
@@ -134,7 +143,7 @@ body {
 }
 
 .description-section {
-    padding-top: 164px;
+    padding-top: 200px;
     padding-bottom: 94px;
 }
 
@@ -144,24 +153,24 @@ body {
     flex-wrap: wrap;
 }
 
-.desription-img1 {
+ .desription-img1 {
     position: relative;
 }
 
 .desription-img1::before {
     content: "";
-    display: block;
-    background-image: url("./img/antenna\ 1.svg");
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
     position: absolute;
-    top: -30px;
+    width: 270px;  
+    height: 120px;
+    top: -110px;   
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: #f5f4fa;
+    background-image: url("./img/antenna 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px; 
+    border-radius: 4px; 
 }
 
 .desription-img2 {
@@ -170,18 +179,18 @@ body {
 
 .desription-img2::before {
     content: "";
-    display: block;
-    background-image: url("./img/clock\ 1.svg");
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
     position: absolute;
-    top: -30px;
+    width: 270px;  
+    height: 120px;
+    top: -110px;   
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: #f5f4fa;
+    background-image: url("./img/clock\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px; 
+    border-radius: 4px; 
 }
 
 .desription-img3 {
@@ -190,18 +199,18 @@ body {
 
 .desription-img3::before {
     content: "";
-    display: block;
-    background-image: url("./img/diagram\ 1.svg");
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
     position: absolute;
-    top: -30px;
+    width: 270px;  
+    height: 120px;
+    top: -110px;   
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: #f5f4fa;
+    background-image: url("./img/diagram\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px; 
+    border-radius: 4px; 
 }
 
 .desription-img4 {
@@ -210,18 +219,18 @@ body {
 
 .desription-img4::before {
     content: "";
-    display: block;
-    background-image: url("./img/astronaut\ 1.svg");
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
     position: absolute;
-    top: -30px;
+    width: 270px;  
+    height: 120px;
+    top: -110px;   
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: #f5f4fa;
+    background-image: url("./img/astronaut\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px; 
+    border-radius: 4px; 
 }
 
 .description-list-item-title {
@@ -291,7 +300,7 @@ body {
 }
 
 
-.team-section {
+ .team-section {
     background-color: #f5f4fa;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -348,32 +357,13 @@ body {
     gap: 10px;
 }
 
-.team-list-item-icon-style {
-    padding: 12px;
-    border-radius: 50px;
-    margin-bottom: 32px;
-    animation: heartBeat; 
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-}
-
-.team-list-link {
-    color: #AFB1B8;
-
-}
-
-.team-list-item-icon-style:hover > .team-list-link {
+.team-list-link:hover .team-list-item-icon {
     color: white;
 }
 
 .team-list-item-icon-style:hover {
     background-color: var(--main-color);
-}
-
-.team-list-item-icon {
-    width: 20px;
-    height: 20px;
-}
+} 
 
 .team-list-item-card {
     background-color: white;
@@ -398,7 +388,10 @@ body {
     justify-content: center;
     border-radius: 50%;
     margin-bottom: 32px;
-    transition: 0.3s;
+    transition: 0.3s;    
+    animation: heartBeat; 
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
 }
 
 .team-list-link:hover .team-list-item-icon-style {
@@ -470,6 +463,34 @@ body {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+
+.footer-list-item-icon-style:hover {
+    background-color: var(--main-color);
+}
+
+.footer-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-list-item-icon-style {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    transition: 0.3s;    
+    animation: heartBeat; 
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-logo-spart {
