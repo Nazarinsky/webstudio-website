@@ -340,7 +340,7 @@ body {
 
 .team-section-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -540,7 +540,8 @@ body {
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: var(--text-footer);
+    color: var(--text-white);
+    opacity: 0.6;
     padding-top: 9px;
 }
 
